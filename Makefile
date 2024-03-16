@@ -7,9 +7,6 @@ clean:
 test:
 	pytest -vv tests/
 
-dev:
-	which pip3
-
 format:
 	autoflake --remove-all-unused-imports -i $(SRC) \
 		&& isort $(SRC) \
