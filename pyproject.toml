@@ -1,11 +1,17 @@
+# this is the default behaviour (can be omitted)
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "hello-world"
 version = "0.0.1"
 description = "This is a demo package"
 readme = "README.md"
 requires-python = ">=3.8"
+dependencies = [
+    "numpy>=1.26.4"
+]
 
-# this is the default behaviour (can be omitted)
-[build-system]
-requires = ["setuptools"]
-build-backend = "setuptools.build_meta"
+[project.optional-dependencies]
+dev = ["pytest", "black", "isort", "autoflake"]
