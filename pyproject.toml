@@ -1,0 +1,11 @@
+[project]
+name = "hello-world"
+version = "0.0.1"
+description = "This is a demo package"
+readme = "README.md"
+requires-python = ">=3.8"
+
+# this is the default behaviour (can be omitted)
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
