@@ -1,9 +1,9 @@
-import hello_world
+from hello_world import hello
 
 
 def test_say_hello():
-    assert hello_world.hello("alex") == "Hello, Alex!"
+    assert hello.say_hello("alex") == "Hello, Alex!"
 
 
 def test_random_number():
-    assert 0 <= hello_world.random_number() <= 1
+    assert 0 <= hello.get_random_number() <= 1
