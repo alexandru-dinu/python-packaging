@@ -1,5 +1,7 @@
 # Python Packaging Reference
 
+[![Build](https://github.com/alexandru-dinu/python-packaging/actions/workflows/main.yml/badge.svg)](https://github.com/alexandru-dinu/python-packaging/actions/workflows/main.yml)
+
 Simple, no-hassle reference for packaging a Python project using just `pyproject.toml`.
 
 ## Usage
