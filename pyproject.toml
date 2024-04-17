@@ -9,9 +9,10 @@ version = "0.0.1"
 description = "This is a demo package"
 readme = "README.md"
 requires-python = ">=3.8"
-dependencies = [
-    "numpy>=1.26.4"
-]
+dynamic = ["dependencies", "optional-dependencies"]
 
-[project.optional-dependencies]
-dev = ["pytest", "black", "isort", "autoflake"]
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.dynamic.optional-dependencies]
+dev = { file = ["requirements-dev.txt"] }
